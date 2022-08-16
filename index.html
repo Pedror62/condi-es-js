@@ -4,29 +4,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>curso</title>
+    <title>teste de idade</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body onload="carregar()">
-    <header>
-        <h1>hora do dia</h1>
-    </header>
+<div class="corfundo">
+<body>
 
-    <section>
+        <header>
+            <h1>Verificador De Idade</h1>
+        </header>
+        <section>
 
-            <div id="msg">
-                aqui aparece a mensagem...
-            </div>
+                <div>
+                        <p>Ano de nascimento:
+                            <input type="number" name="txtano" id="txtano" min="0">
+                        </p>
+                        <p>Sexo:
+                                <input type="radio" name="radsex" id="mas" checked>
+                                <label for="mas">masculino</label>
+                                <input type="radio" name="radsex" id="fem" >
+                                <label for="fem">feminino</label>
+                        </p>
+                        <p>
+                            <input type="button" value = "verificar" onclick = "verificar()">
+                        </p>
+                </div>
 
-            <div id="foto">
-                <img id="imagem" src="manha.jpg" alt="foto">
-            </div>
-        
-    </section>
-
-    <footer>
-        <P>&copy;Pedro</P> 
-    </footer>
-    <script src="java.js"></script>
+                <div id="res">
+                    Preencha os dados acima de acordo com solicitado!
+                </div>
+        </section>
+        <footer>
+            <p>&copy;Pedro</p>
+        </footer>
+        <script src="index.js"></script>
+ 
 </body>
+</div>  
 </html>
