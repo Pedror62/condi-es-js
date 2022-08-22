@@ -1,61 +1,69 @@
-function verificar(){
-   var data = new Date()
-   var ano = data.getFullYear()
-   var fano = document.getElementById('txtano')
-   var res = document.querySelector('div#res')
-   if (fano.value.length ==  0 || Number(fano.value) > ano) {
-            window.alert('[ERRO} TENTE NOVAMENTE NÃO CONRESPONDE A ANOS DE VIDA, MAS SIM A MESES DE VIDA!')
-    }  else {
-        var fsex = document.getElementsByName('radsex')
-        var idade = ano - Number(fano.value)
-        var genero = ' '
-        var img = document.createElement('img')
-        img.setAttribute('id' , 'foto')
-        if (fsex[0].checked) {
-         genero = 'homem'
-         if (idade >= 0 && idade < 10) {
-            //criança   
-            
-            img.setAttribute('src', 'bbmenino.jpg')
-              
-         } else if (idade < 21) {
-            //jovem
-            img.setAttribute('src', 'meninojovem.jpg')
-             
-         } else if (idade < 50){
-            //adulto
-            img.setAttribute('src', 'adultomasculino.jpg')
-               
-         } else {
-            //idoso
-            img.setAttribute('src', 'idosomasculino.jpg')
-            
-         }
 
-        } else if (fsex[1].checked) {
-            genero = 'sexo feminino'
-            if (idade >= 0 && idade < 10) {
-                //criança   
-                img.setAttribute('src', 'bbmenina.jpg')
-                 
-             } else if (idade < 21) {
-                //jovem
-                img.setAttribute('src', 'meninajovem.jpg')
-                 
-             } else if (idade < 50){
-                //adulto
-                img.setAttribute('src', 'mulher.jpg' )
-              
-             } else {
-                //idoso
-                img.setAttribute('src', 'idosafeminina.jpg')
-           
-             }
-    
-        }
-        res.style.textAlign = 'center'
-        res.innerHTML = `detectamos ${genero}:${idade} anos.`
-        res.appendChild(img)
+//--------condições simples&compostas 
 
-   }
+/*var vel = 62 
+    console.log( `sua velocidade e  ${vel}`)
+
+
+    var pais = 'Brasil'
+    console.log({pais})
+    if (pais != 'Brasil') {
+        console.log('voce não e brasileiro, e nescessari o visto!')
+    } else {
+        console.log('voce e Brasileiro!')
+    }
+
+    var aluno = 'joao'
+    console.log({aluno})
+    if (aluno != "maria"){
+        console.log('voce não e maria voce esta reprovado')
+    } else {
+        console.log('voce e Maria e esta aprovada!')
+    } 
+
+
+    var vel =  '100'
+    console.log({vel})
+    if(vel > 65) {
+        console.log('voce esta multado')
+    } else (
+        console.log('continue com cuidado. ')
+    )
+
+
+    var carro ='microonibus'
+        console.log({carro})
+        if(carro != 'onibus'){
+            console.log('e nescessari um onibus!')
+        } else (
+            console.log('patio 10 marcopolo, disponivel!')
+        )
+
+
+var item = 'feijão'
+            console.log({item})
+            if(item != 'feijão'){
+                console.log('voce precisa de feijão')
+            } else {
+                console.log('certo, leve dois PACOTES DE FEIJÃO' )
+}/*
+
+
+
+condições compostas ---- switch
+
+//---------repertições 
+var c = 1
+while (c < = 2) {
+    console.log("deu")
+}*/
+/*
+var c = 1
+while (c <= 2) {
+    console.log(c)
+    c++
+}*/
+
+for ( var c =1;c <= 3;c++){
+    console.log('deu certo')
 }
