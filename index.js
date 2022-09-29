@@ -1,7 +1,7 @@
 
 //--------condições simples&compostas 
-
-/*var vel = 62 
+//teste 01
+var vel = 62 
     console.log( `sua velocidade e  ${vel}`)
 
 
@@ -12,7 +12,7 @@
     } else {
         console.log('voce e Brasileiro!')
     }
-
+//teste 02
     var aluno = 'joao'
     console.log({aluno})
     if (aluno != "maria"){
@@ -20,7 +20,7 @@
     } else {
         console.log('voce e Maria e esta aprovada!')
     } 
-
+//teste 03
 
     var vel =  '100'
     console.log({vel})
@@ -30,7 +30,7 @@
         console.log('continue com cuidado. ')
     )
 
-
+//teste 04
     var carro ='microonibus'
         console.log({carro})
         if(carro != 'onibus'){
@@ -39,14 +39,14 @@
             console.log('patio 10 marcopolo, disponivel!')
         )
 
-
-var item = 'feijão'
-            console.log({item})
-            if(item != 'feijão'){
+//teste 05
+         var item = 'feijão'
+             console.log({item})
+         if(item != 'feijão'){
                 console.log('voce precisa de feijão')
-            } else {
+         } else {
                 console.log('certo, leve dois PACOTES DE FEIJÃO' )
-}/*
+}
 
 
 
